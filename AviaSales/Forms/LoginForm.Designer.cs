@@ -117,6 +117,7 @@
             this.linkLabel_notHaveAcc.TabIndex = 6;
             this.linkLabel_notHaveAcc.TabStop = true;
             this.linkLabel_notHaveAcc.Text = "Don`t have accont? Sign up!";
+            this.linkLabel_notHaveAcc.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_notHaveAcc_LinkClicked);
             // 
             // btn_visiblePassword
             // 

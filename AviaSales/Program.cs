@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using AviaSales.Forms;
+using AviaSales.Models.Users;
 
 namespace AviaSales
 {
@@ -16,9 +18,15 @@ namespace AviaSales
         [STAThread]
         static void Main()
         {
+            Admin admin = new Admin("Rostyslav", "Vaso", 19, "rostyk", "1234");
+            Program.AviaSales.Users.Add(admin);
+
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            //Application.Run(new LoginForm());
             Application.Run(new LoginForm());
+
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AviaSales.Models.Users;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,31 +8,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using AviaSales.Models.Users;
-using AviaSales.Models.AviaSales;
 
 namespace AviaSales.Forms
 {
-    public partial class RegisterForm : Form
+    public partial class AddAccount : Form
     {
-        
-        public RegisterForm()
+        public AddAccount()
         {
-
             InitializeComponent();
         }
 
-        private void btn_SignUp_Click(object sender, EventArgs e)
-        {
-            if (CheckValidSignUp())
-            {
-                Client client = new Models.Users.Client(tb_name.Text, tb_surname.Text, (int) numeric_age.Value, tb_login.Text,
-                    tb_password.Text);
-
-                Program.AviaSales.Users.Add(client);
-                Close();
-            }
-        }
 
         private bool CheckValidSignUp()
         {
@@ -76,6 +62,26 @@ namespace AviaSales.Forms
             }
             return true;
         }
-    }
-}
 
+        private void btn_Save_Click(object sender, EventArgs e)
+        {
+            
+            if (CheckValidSignUp())
+            {
+                if (checkBox.Checked)
+                {
+                    var admin = new Admin(tb_name.Text, tb_surname.Text, (int)numeric_age.Value, tb_login.Text,
+                        tb_password.Text);
+                    Program.AviaSales.Users.Add(admin);
+                }
+                else
+                {
+                    var client = new Client(tb_name.Text, tb_surname.Text, (int)numeric_age.Value, tb_login.Text,
+                        tb_password.Text);
+                    Program.AviaSales.Users.Add(client);
+                }
+            }
+        }
+    }
+
+}

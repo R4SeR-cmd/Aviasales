@@ -61,7 +61,7 @@
             this.label2.ForeColor = System.Drawing.Color.DarkGoldenrod;
             this.label2.Location = new System.Drawing.Point(12, 107);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(277, 40);
+            this.label2.Size = new System.Drawing.Size(202, 40);
             this.label2.TabIndex = 2;
             this.label2.Text = "Your name:";
             // 
@@ -72,7 +72,7 @@
             this.label3.ForeColor = System.Drawing.Color.DarkGoldenrod;
             this.label3.Location = new System.Drawing.Point(12, 187);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(202, 40);
+            this.label3.Size = new System.Drawing.Size(215, 40);
             this.label3.TabIndex = 3;
             this.label3.Text = "Your surname:";
             // 
@@ -125,7 +125,7 @@
             // tb_name
             // 
             this.tb_name.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.tb_name.Location = new System.Drawing.Point(237, 104);
+            this.tb_name.Location = new System.Drawing.Point(256, 104);
             this.tb_name.Multiline = true;
             this.tb_name.Name = "tb_name";
             this.tb_name.Size = new System.Drawing.Size(314, 43);
@@ -134,7 +134,7 @@
             // tb_surname
             // 
             this.tb_surname.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.tb_surname.Location = new System.Drawing.Point(237, 184);
+            this.tb_surname.Location = new System.Drawing.Point(256, 184);
             this.tb_surname.Multiline = true;
             this.tb_surname.Name = "tb_surname";
             this.tb_surname.Size = new System.Drawing.Size(314, 43);
@@ -143,7 +143,7 @@
             // tb_login
             // 
             this.tb_login.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.tb_login.Location = new System.Drawing.Point(237, 326);
+            this.tb_login.Location = new System.Drawing.Point(256, 326);
             this.tb_login.Multiline = true;
             this.tb_login.Name = "tb_login";
             this.tb_login.Size = new System.Drawing.Size(314, 43);
@@ -152,7 +152,7 @@
             // tb_password
             // 
             this.tb_password.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.tb_password.Location = new System.Drawing.Point(237, 388);
+            this.tb_password.Location = new System.Drawing.Point(256, 391);
             this.tb_password.Multiline = true;
             this.tb_password.Name = "tb_password";
             this.tb_password.Size = new System.Drawing.Size(314, 43);
@@ -161,7 +161,7 @@
             // numeric_age
             // 
             this.numeric_age.AutoSize = true;
-            this.numeric_age.Location = new System.Drawing.Point(237, 256);
+            this.numeric_age.Location = new System.Drawing.Point(256, 256);
             this.numeric_age.Name = "numeric_age";
             this.numeric_age.Size = new System.Drawing.Size(170, 22);
             this.numeric_age.TabIndex = 13;

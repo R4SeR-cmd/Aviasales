@@ -33,8 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.6.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.6.0\lib\net48\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,20 +50,87 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enums\TypeTicket.cs" />
+    <Compile Include="Forms\AdminFunction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminFunction.Designer.cs">
+      <DependentUpon>AdminFunction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddAccount.Designer.cs">
+      <DependentUpon>AddAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddFlight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddFlight.Designer.cs">
+      <DependentUpon>AddFlight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddPlane.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddPlane.Designer.cs">
+      <DependentUpon>AddPlane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CancelFlight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CancelFlight.Designer.cs">
+      <DependentUpon>CancelFlight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CancelTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CancelTicket.Designer.cs">
+      <DependentUpon>CancelTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ClientFunction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ClientFunction.Designer.cs">
+      <DependentUpon>ClientFunction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditFlight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditFlight.Designer.cs">
+      <DependentUpon>EditFlight.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AdminProfile.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\AdminProfile.Designer.cs">
       <DependentUpon>AdminProfile.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Client.cs">
+    <Compile Include="Forms\ClientFunctionHome.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Client.Designer.cs">
-      <DependentUpon>Client.cs</DependentUpon>
+    <Compile Include="Forms\ClientFunctionHome.Designer.cs">
+      <DependentUpon>ClientFunctionHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ClientProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ClientProfile.Designer.cs">
+      <DependentUpon>ClientProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditFlightNestedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditFlightNestedForm.Designer.cs">
+      <DependentUpon>EditFlightNestedForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EndedFlight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EndedFlight.Designer.cs">
+      <DependentUpon>EndedFlight.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Information.cs">
       <SubType>Form</SubType>
@@ -92,11 +165,47 @@
     <Compile Include="Models\Users\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\AdminFunction.resx">
+      <DependentUpon>AdminFunction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddAccount.resx">
+      <DependentUpon>AddAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddFlight.resx">
+      <DependentUpon>AddFlight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddPlane.resx">
+      <DependentUpon>AddPlane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CancelFlight.aa-DJ.resx">
+      <DependentUpon>CancelFlight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CancelFlight.en.resx">
+      <DependentUpon>CancelFlight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CancelFlight.resx">
+      <DependentUpon>CancelFlight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CancelTicket.resx">
+      <DependentUpon>CancelTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditFlight.resx">
+      <DependentUpon>EditFlight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditFlightNestedForm.resx">
+      <DependentUpon>EditFlightNestedForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EndedFlight.resx">
+      <DependentUpon>EndedFlight.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminProfile.resx">
       <DependentUpon>AdminProfile.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Client.resx">
-      <DependentUpon>Client.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\ClientFunctionHome.resx">
+      <DependentUpon>ClientFunctionHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ClientProfile.resx">
+      <DependentUpon>ClientProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Information.resx">
       <DependentUpon>Information.cs</DependentUpon>
@@ -120,6 +229,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -151,6 +261,53 @@
   <ItemGroup>
     <None Include="Resources\Unvisible.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\as-logo-design-template-5ad0717a13ccde12ae6103b709e00f06_screen1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\as-logo-design-template-5ad0717a13ccde12ae6103b709e00f06_screen11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-klev-club-njnn-p-belii-plyus-png-15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-klev-club-njnn-p-belii-plyus-png-151.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-klev-club-njnn-p-belii-plyus-png-1511.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_348099114-stock-illustration-airplane-flat-icon-white-background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-profile-icon-free-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-profile-icon-free-vector1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-klev-club-qjyp-p-tiket-png-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-246.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_498741370-stock-illustration-add-bold-buttons-icon-outline.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kvadrat-dlya-samyh-malenkih.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5895964.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\as-logo-design-template-5ad0717a13ccde12ae6103b709e00f06_screen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\as-logo-design-template-5ad0717a13ccde12ae6103b709e00f06_screen2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\as-logo-design-template-5ad0717a13ccde12ae6103b709e00f06_screen3.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

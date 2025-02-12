@@ -8,6 +8,7 @@ namespace AviaSales.Models.Flights
 {
     public class Flight
     {
+        public int Id { get; set; }
         public DateTime DepartureDate { get; set; }
         public DateTime DateOfArrival { get; set; }
         public List<Tickets.Ticket> Ticket { get; set; }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AviaSales.Forms
 {
-    public partial class Client : Form
+    public partial class ClientFunction : Form
     {
-        public Client()
+        public ClientFunction()
         {
             InitializeComponent();
         }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AviaSales.Models.Users;
 
 namespace AviaSales.Forms
 {
@@ -38,7 +39,31 @@ namespace AviaSales.Forms
 
         private void btn_LogIn_Click(object sender, EventArgs e)
         {
+            var user = Program.AviaSales.Users
+                .FirstOrDefault(u => u.Login == tb_login.Text && u.Password == tb_password.Text);
 
+            if (user == null)
+            {
+                MessageBox.Show("Not valid password or login");
+            }
+
+            if (user is Client)
+            {
+                var clientProfile = new ClientProfile(user);
+                clientProfile.ShowDialog();
+            }
+            else if (user is Admin)
+            {
+                var adminProfile = new AdminProfile(user);
+                adminProfile.ShowDialog();
+            }
+        }
+
+        private void linkLabel_notHaveAcc_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            var registerForm = new RegisterForm();
+            registerForm.ShowDialog();
         }
     }
 }
+ 

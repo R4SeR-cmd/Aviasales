@@ -63,6 +63,96 @@ namespace AviaSales.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _5895964 {
+            get {
+                object obj = ResourceManager.GetObject("5895964", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap as_logo_design_template_5ad0717a13ccde12ae6103b709e00f06_screen {
+            get {
+                object obj = ResourceManager.GetObject("as-logo-design-template-5ad0717a13ccde12ae6103b709e00f06_screen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap as_logo_design_template_5ad0717a13ccde12ae6103b709e00f06_screen1 {
+            get {
+                object obj = ResourceManager.GetObject("as-logo-design-template-5ad0717a13ccde12ae6103b709e00f06_screen1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap as_logo_design_template_5ad0717a13ccde12ae6103b709e00f06_screen11 {
+            get {
+                object obj = ResourceManager.GetObject("as-logo-design-template-5ad0717a13ccde12ae6103b709e00f06_screen11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap as_logo_design_template_5ad0717a13ccde12ae6103b709e00f06_screen2 {
+            get {
+                object obj = ResourceManager.GetObject("as-logo-design-template-5ad0717a13ccde12ae6103b709e00f06_screen2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap as_logo_design_template_5ad0717a13ccde12ae6103b709e00f06_screen3 {
+            get {
+                object obj = ResourceManager.GetObject("as-logo-design-template-5ad0717a13ccde12ae6103b709e00f06_screen3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap depositphotos_348099114_stock_illustration_airplane_flat_icon_white_background {
+            get {
+                object obj = ResourceManager.GetObject("depositphotos_348099114-stock-illustration-airplane-flat-icon-white-background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap depositphotos_498741370_stock_illustration_add_bold_buttons_icon_outline {
+            get {
+                object obj = ResourceManager.GetObject("depositphotos_498741370-stock-illustration-add-bold-buttons-icon-outline", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap edit_246 {
+            get {
+                object obj = ResourceManager.GetObject("edit-246", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ImgAdmin {
             get {
                 object obj = ResourceManager.GetObject("ImgAdmin", resourceCulture);
@@ -76,6 +166,56 @@ namespace AviaSales.Properties {
         internal static System.Drawing.Bitmap ImgAdmin1 {
             get {
                 object obj = ResourceManager.GetObject("ImgAdmin1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kvadrat_dlya_samyh_malenkih {
+            get {
+                object obj = ResourceManager.GetObject("kvadrat-dlya-samyh-malenkih", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_klev_club_njnn_p_belii_plyus_png_15 {
+            get {
+                object obj = ResourceManager.GetObject("png-klev-club-njnn-p-belii-plyus-png-15", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_klev_club_njnn_p_belii_plyus_png_151 {
+            get {
+                object obj = ResourceManager.GetObject("png-klev-club-njnn-p-belii-plyus-png-151", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_klev_club_njnn_p_belii_plyus_png_1511 {
+            get {
+                object obj = ResourceManager.GetObject("png-klev-club-njnn-p-belii-plyus-png-1511", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_klev_club_qjyp_p_tiket_png_25 {
+            get {
+                object obj = ResourceManager.GetObject("png-klev-club-qjyp-p-tiket-png-25", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -106,6 +246,26 @@ namespace AviaSales.Properties {
         internal static System.Drawing.Bitmap Unvisible {
             get {
                 object obj = ResourceManager.GetObject("Unvisible", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_profile_icon_free_vector {
+            get {
+                object obj = ResourceManager.GetObject("user-profile-icon-free-vector", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_profile_icon_free_vector1 {
+            get {
+                object obj = ResourceManager.GetObject("user-profile-icon-free-vector1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

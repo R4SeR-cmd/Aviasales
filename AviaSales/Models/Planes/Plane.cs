@@ -11,14 +11,12 @@ namespace AviaSales.Models.Planes
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public string Model { get; set; }
         public List<Flight> Flights { get; set; }
         
-        public Plane(int id, string name, string model)
+        public Plane(int id, string name)
         {
             Id = id;
             Name = name;
-            Model = model;
             Flights = new List<Flight>();
         }
     }

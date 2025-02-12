@@ -9,13 +9,11 @@ namespace AviaSales.Models.Tickets
 {
     public class Ticket
     {
-        public int Id { get; set; }
         public TypeTicket Type { get; set; }
         public int Price { get; set; }
 
-        public Ticket(int price, int id, TypeTicket type)
+        public Ticket(int price,  TypeTicket type)
         {
-            Id = id;
             Type = type;
             Price = price;
         }
