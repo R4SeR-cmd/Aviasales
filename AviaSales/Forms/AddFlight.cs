@@ -30,13 +30,14 @@ namespace AviaSales.Forms
                 return;
             }
 
-            if (dateTimePicker_arriving.Value <= dateTimePicker_date.Value)
+            if (dateTimePicker_arriving.Value <= dateTimePicker_date.Value &&
+                dateTimePicker_date.Value < DateTime.Now)
             {
                 MessageBox.Show("Invalid time for flight");
                 return;
             }
 
-            if (numericU_economyCount.Value + numeric_firstClassCount.Value + numeric_businessCount.Value < 10)
+            if (numericU_economyCount.Value + numeric_firstClassCount.Value + numeric_businessCount.Value < 1)
             {
                 MessageBox.Show("Min count of tickets can`t be less 1");
                 return;
@@ -45,7 +46,7 @@ namespace AviaSales.Forms
 
             var planes = Program.AviaSales.Planes.Where(p => p.Id == (int)numeric_planes.Value);
 
-            if (planes.Count() ==  0)
+            if (!planes.Any())
             {
                 MessageBox.Show("Invalid  plane");
                 return;
@@ -59,11 +60,10 @@ namespace AviaSales.Forms
                 return;
             }
 
-            var flight = new Flight(dateTimePicker_date.Value,dateTimePicker_arriving.Value,tb_from.Text,tb_destinati.Text);
+            var flight = new Flight((int)numeric_flight.Value, dateTimePicker_date.Value,dateTimePicker_arriving.Value,tb_from.Text,tb_destinati.Text);
             
             
-
-            var enonomyTicket = new Ticket( (int) numeric_economyPrice.Value, TypeTicket.Eco);
+            var enonomyTicket = new Ticket((int) numeric_economyPrice.Value, TypeTicket.Eco);
             for (int i = 0; i < numericU_economyCount.Value; i++)
             {
                 flight.Ticket.Add(enonomyTicket);

@@ -43,5 +43,12 @@ namespace AviaSales.Forms
             lb_age.Text = _client.Age.ToString();
             lb_cash.Text = _client.Balance.ToString();
         }
+
+        private void btn_function_Click(object sender, System.EventArgs e)
+        {
+            var clientPanel = new ClientFunction(_client);
+            clientPanel.ShowDialog();
+            RefreshDataClient();
+        }
     }
 }

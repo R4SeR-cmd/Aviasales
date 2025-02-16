@@ -36,6 +36,9 @@
     <Reference Include="FontAwesome.Sharp, Version=6.6.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.6.6.0\lib\net48\FontAwesome.Sharp.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
@@ -78,11 +81,23 @@
     <Compile Include="Forms\AddPlane.Designer.cs">
       <DependentUpon>AddPlane.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\BuyTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BuyTicket.Designer.cs">
+      <DependentUpon>BuyTicket.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\CancelFlight.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\CancelFlight.Designer.cs">
       <DependentUpon>CancelFlight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CancelMyTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CancelMyTicket.Designer.cs">
+      <DependentUpon>CancelMyTicket.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\CancelTicket.cs">
       <SubType>Form</SubType>
@@ -156,6 +171,24 @@
     <Compile Include="Forms\RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\TicketsFiltrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TicketsFiltrationForm.Designer.cs">
+      <DependentUpon>TicketsFiltrationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TopUpBalance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TopUpBalance.Designer.cs">
+      <DependentUpon>TopUpBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Your tickets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Your tickets.Designer.cs">
+      <DependentUpon>Your tickets.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\AviaSales\AviaSales.cs" />
     <Compile Include="Models\Flights\Flight.cs" />
     <Compile Include="Models\Planes\Plane.cs" />
@@ -165,6 +198,7 @@
     <Compile Include="Models\Users\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\AviaSalesJsonService.cs" />
     <EmbeddedResource Include="Forms\AdminFunction.resx">
       <DependentUpon>AdminFunction.cs</DependentUpon>
     </EmbeddedResource>
@@ -177,6 +211,9 @@
     <EmbeddedResource Include="Forms\AddPlane.resx">
       <DependentUpon>AddPlane.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BuyTicket.resx">
+      <DependentUpon>BuyTicket.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\CancelFlight.aa-DJ.resx">
       <DependentUpon>CancelFlight.cs</DependentUpon>
     </EmbeddedResource>
@@ -186,8 +223,14 @@
     <EmbeddedResource Include="Forms\CancelFlight.resx">
       <DependentUpon>CancelFlight.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CancelMyTicket.resx">
+      <DependentUpon>CancelMyTicket.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\CancelTicket.resx">
       <DependentUpon>CancelTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ClientFunction.resx">
+      <DependentUpon>ClientFunction.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\EditFlight.resx">
       <DependentUpon>EditFlight.cs</DependentUpon>
@@ -218,6 +261,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TicketsFiltrationForm.resx">
+      <DependentUpon>TicketsFiltrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TopUpBalance.resx">
+      <DependentUpon>TopUpBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Your tickets.resx">
+      <DependentUpon>Your tickets.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -250,12 +302,6 @@
     <None Include="Resources\ProfileImg1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\ImgAdmin.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ImgAdmin1.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\visible1.png" />
   </ItemGroup>
   <ItemGroup>
@@ -268,34 +314,10 @@
     <None Include="Resources\as-logo-design-template-5ad0717a13ccde12ae6103b709e00f06_screen11.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\png-klev-club-njnn-p-belii-plyus-png-15.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\png-klev-club-njnn-p-belii-plyus-png-151.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\png-klev-club-njnn-p-belii-plyus-png-1511.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\depositphotos_348099114-stock-illustration-airplane-flat-icon-white-background.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\user-profile-icon-free-vector.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\user-profile-icon-free-vector1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\png-klev-club-qjyp-p-tiket-png-25.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\edit-246.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\depositphotos_498741370-stock-illustration-add-bold-buttons-icon-outline.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\kvadrat-dlya-samyh-malenkih.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\5895964.png" />
@@ -309,5 +331,6 @@
   <ItemGroup>
     <None Include="Resources\as-logo-design-template-5ad0717a13ccde12ae6103b709e00f06_screen3.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

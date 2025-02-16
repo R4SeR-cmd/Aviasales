@@ -1,20 +1,19 @@
-﻿using System;
+﻿using AviaSales.Models.Users;
+using Newtonsoft.Json;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AviaSales.Models.Users;
 
 namespace AviaSales.Models.AviaSales
-{
+{   
     public class AviaSales
-    { 
-        public List<Users.User> Users { get; set; }
+    {
+        [JsonProperty("Users")]
+        public List<User> Users { get; set; }
+        [JsonProperty("Planes")]
         public List<Planes.Plane> Planes { get; set; }
         
         public AviaSales()
         {
-            Users = new List<Users.User>();
+            Users = new List<User>();
             Planes = new List<Planes.Plane>();
         }
     }

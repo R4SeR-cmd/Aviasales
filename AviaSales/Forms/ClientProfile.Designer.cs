@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_function = new System.Windows.Forms.Button();
             this.btn_setting = new System.Windows.Forms.Button();
             this.btn_info = new System.Windows.Forms.Button();
             this.btn_logout = new System.Windows.Forms.Button();
@@ -46,17 +46,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button2
+            // btn_function
             // 
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button2.Location = new System.Drawing.Point(22, 235);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(157, 41);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Functional";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btn_function.BackColor = System.Drawing.Color.White;
+            this.btn_function.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btn_function.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btn_function.Location = new System.Drawing.Point(22, 235);
+            this.btn_function.Name = "btn_function";
+            this.btn_function.Size = new System.Drawing.Size(157, 41);
+            this.btn_function.TabIndex = 9;
+            this.btn_function.Text = "Functional";
+            this.btn_function.UseVisualStyleBackColor = false;
+            this.btn_function.Click += new System.EventHandler(this.btn_function_Click);
             // 
             // btn_setting
             // 
@@ -204,7 +205,7 @@
             this.ClientSize = new System.Drawing.Size(1111, 433);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btn_logout);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btn_function);
             this.Controls.Add(this.btn_setting);
             this.Controls.Add(this.btn_info);
             this.Controls.Add(this.pictureBox1);
@@ -218,7 +219,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_function;
         private System.Windows.Forms.Button btn_setting;
         private System.Windows.Forms.Button btn_info;
         private System.Windows.Forms.Button btn_logout;

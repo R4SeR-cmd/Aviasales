@@ -163,9 +163,7 @@
   <data name="Unvisible" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Unvisible.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ImgAdmin1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ImgAdmin1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+  
   <data name="as-logo-design-template-5ad0717a13ccde12ae6103b709e00f06_screen11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\as-logo-design-template-5ad0717a13ccde12ae6103b709e00f06_screen11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

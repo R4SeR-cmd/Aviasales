@@ -28,16 +28,15 @@ namespace AviaSales.Forms
             {
                 MessageBox.Show("Invalid id");
                 return;
-
             }
 
             _plane = plane;
 
-            foreach (var p in _plane.Flights)
+            foreach (var f in _plane.Flights)
             {
-                listBox1.Items.Add(p);
+                if (f.DepartureDate > DateTime.Now)
+                    listBox1.Items.Add(f);
             }
-
         }
 
         private void btn_choose_Click(object sender, EventArgs e)

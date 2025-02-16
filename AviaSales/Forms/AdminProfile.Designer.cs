@@ -168,10 +168,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::AviaSales.Properties.Resources.ImgAdmin1;
+            this.pictureBox1.Image = global::AviaSales.Properties.Resources.ImgAdmin;
             this.pictureBox1.Location = new System.Drawing.Point(47, 78);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(227, 231);
+            this.pictureBox1.Size = new System.Drawing.Size(227, 211);
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
